@@ -127,7 +127,7 @@ function RegisterForm({ setAuth }) {
                     >Submit
                     </button>
 
-                    <p className="register__form__text__to__login">Have account already? <a onClick={() => toLogin()}>Login</a></p>
+                    <p className="register__form__text__to__login">Have account already? <button onClick={() => toLogin()}>Login</button></p>
                 </form>
             </Container>
         </div>

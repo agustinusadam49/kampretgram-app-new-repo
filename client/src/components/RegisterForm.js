@@ -48,7 +48,7 @@ function RegisterForm({ setAuth }) {
 
         const requestOptions = {
             method: "POST",
-            headers: { "Content-Type": "application/json", "dataType": "json" },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body)
         }
 

@@ -46,7 +46,7 @@ function RegisterForm({ setAuth }) {
             password: password
         }
 
-        let url = "https://intense-river-55466.herokuapp.com/users/register/"
+        let url = "https://intense-river-55466.herokuapp.com/users/register"
         const requestOptions = {
             method: "POST",
             mode: 'cors',

@@ -48,7 +48,7 @@ function LoginForm({ setAuth }) {
             body: JSON.stringify(body)
         }
 
-        let url = "https://intense-river-55466.herokuapp.com/users/login/"
+        let url = "https://intense-river-55466.herokuapp.com/users/login"
 
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())

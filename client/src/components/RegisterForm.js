@@ -46,12 +46,14 @@ function RegisterForm({ setAuth }) {
             password: password
         }
 
-        let url = "https://intense-river-55466.herokuapp.com/users/register"
         const requestOptions = {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body)
         }
+
+        let url = "https://intense-river-55466.herokuapp.com/users/register"
+
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(newUserData => {

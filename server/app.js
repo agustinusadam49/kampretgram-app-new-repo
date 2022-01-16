@@ -17,9 +17,9 @@ const io = require("socket.io")(server);
 const indexRouter = require("./routes");
 const errorHandlers = require("./middlewares/errorHandlers");
 
+app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 app.use(morgan("dev"))
 app.use(indexRouter);
 app.use(errorHandlers);

@@ -18,7 +18,7 @@ const indexRouter = require("./routes");
 const errorHandlers = require("./middlewares/errorHandlers");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: "https://intense-river-55466.herokuapp.com", credentials: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"))
 app.use(indexRouter);

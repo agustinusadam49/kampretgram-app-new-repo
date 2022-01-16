@@ -80,8 +80,8 @@ function App() {
     if (isAuthenticated === false) {
       return (
         <div>
-          <button className="app__headerButtonRegister"><a className="app__anchor__register" href="https://kampretgram.netlify.app/register/">Register</a></button>
-          <button className="app__headerButtonLogin"><a className="app__anchor__login" href="https://kampretgram.netlify.app/login/">Login</a></button>
+          <button className="app__headerButtonRegister"><a className="app__anchor__register" href="https://kampretgram.netlify.app/register">Register</a></button>
+          <button className="app__headerButtonLogin"><a className="app__anchor__login" href="https://kampretgram.netlify.app/login">Login</a></button>
         </div>
       )
     } else if (isAuthenticated === true) {

@@ -1,1 +1,1 @@
-web: npm i sequelize-cli -g && sequelize db:migrate && node app.js
+web: node app.js

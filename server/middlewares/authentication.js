@@ -2,28 +2,36 @@ const { Users } = require("../models");
 const { verifyToken } = require("../helpers/jwt");
 
 function authentication(req, res, next) {
-    let userToken = req.headers.token;
+    const userToken = req.headers.token;
     try {
-        let decoded = verifyToken(userToken);
-        let userId = decoded.id;
-        let userEmail = decoded.email;
-        Users.findByPk(userId)
-            .then(userData => {
-                if (userData) {
-                    req.userDataId = userId;
-                    req.userDataEmail = userEmail;
-                    next();
-                } else if (!userData) {
-                    throw {
-                        status: "401 Unauthorized",
-                        message: "You Must Login First to access this!",
-                        code: 401
+        const decoded = verifyToken(userToken);
+        if (decoded) {
+            const userId = decoded.id;
+            const userEmail = decoded.email;
+            Users.findByPk(userId)
+                .then(userDataById => {
+                    if (userDataById) {
+                        req.userDataId = userId;
+                        req.userDataEmail = userEmail;
+                        next()
+                    } else if (!userDataById) {
+                        throw {
+                            status: "401 Unauthorized!",
+                            message: "This user has been deleted from DB",
+                            code: 401
+                        }
                     }
-                }
-            })
-            .catch(err => {
-                throw err;
-            })
+                })
+                .catch(err => {
+                    next(err);
+                })
+        } else if (!decoded) {
+            throw {
+                status: "401 Unauthorized!",
+                message: "User must login or register first!",
+                code: 401
+            }
+        }
     } catch (err) {
         next(err);
     }

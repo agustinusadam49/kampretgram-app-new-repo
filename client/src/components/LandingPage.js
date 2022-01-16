@@ -41,21 +41,21 @@ function LandingPage() {
                     <p className="landing__page__footer__menu">
                         <a
                             className="landing__page__anchor__tag"
-                            href="https://intense-river-55466.herokuapp.com//about"
+                            href="https://kampretgram.netlify.app/about"
                         >About</a>
                     </p>
 
                     <p className="landing__page__footer__menu">
                         <a
                             className="landing__page__anchor__tag"
-                            href="https://intense-river-55466.herokuapp.com//contact"
+                            href="https://kampretgram.netlify.app/contact"
                         >Contact</a>
                     </p>
 
                     <p className="landing__page__footer__menu">
                         <a
                             className="landing__page__anchor__tag"
-                            href="https://intense-river-55466.herokuapp.com//my-project"
+                            href="https://kampretgram.netlify.app/my-project"
                         >My Project</a>
                     </p>
 

@@ -104,7 +104,7 @@ function App() {
         <div className="app__header">
 
           <div className="app__header__image_brandname">
-            <h5 className="app__headerBrandName"><a className="app__anchor__tag" href="https://intense-river-55466.herokuapp.com/">KampretGram</a></h5>
+            <h5 className="app__headerBrandName"><a className="app__anchor__tag" href="https://kampretgram.netlify.app">KampretGram</a></h5>
           </div>
 
           <div className="app__headerButton">

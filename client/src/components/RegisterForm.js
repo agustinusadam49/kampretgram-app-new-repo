@@ -127,7 +127,7 @@ function RegisterForm({ setAuth }) {
                     >Submit
                     </button>
 
-                    <p className="register__form__text__to__login">Have account already? <a onClick={() => toLogin()} href="https://kampretgram.netlify.app/login">Login</a></p>
+                    <p className="register__form__text__to__login">Have account already? <a onClick={() => toLogin()}>Login</a></p>
                 </form>
             </Container>
         </div>

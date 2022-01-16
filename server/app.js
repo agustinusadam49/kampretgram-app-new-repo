@@ -10,7 +10,9 @@ const express = require("express");
 const morgan = require("morgan");
 const app = express();
 const cors = require("cors");
-const http = require("http");
+const http = require("http");const server = http.createServer(app);
+const io = require("socket.io")(server);
+
 const PORT = process.env.PORT || 5000;
 const indexRouter = require("./routes");
 const errorHandlers = require("./middlewares/errorHandlers");
@@ -22,8 +24,6 @@ app.use(morgan("dev"))
 app.use(indexRouter);
 app.use(errorHandlers);
 
-const server = http.createServer(app);
-const io = require("socket.io")(server);
 
 let num = 0;
 let usersOnline = false;

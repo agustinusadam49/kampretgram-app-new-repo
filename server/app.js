@@ -12,17 +12,18 @@ const app = express();
 const cors = require("cors");
 const http = require("http");
 const PORT = process.env.PORT || 5000;
-const server = http.createServer(app);
-const io = require("socket.io")(server);
 const indexRouter = require("./routes");
 const errorHandlers = require("./middlewares/errorHandlers");
 
-app.use(express.json());
 app.use(cors({origin: "https://intense-river-55466.herokuapp.com", credentials: true }));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(morgan("dev"))
 app.use(indexRouter);
 app.use(errorHandlers);
+
+const server = http.createServer(app);
+const io = require("socket.io")(server);
 
 let num = 0;
 let usersOnline = false;

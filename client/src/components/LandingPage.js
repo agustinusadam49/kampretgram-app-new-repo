@@ -41,21 +41,21 @@ function LandingPage() {
                     <p className="landing__page__footer__menu">
                         <a
                             className="landing__page__anchor__tag"
-                            href="http://localhost:3000/about"
+                            href="https://intense-river-55466.herokuapp.com//about"
                         >About</a>
                     </p>
 
                     <p className="landing__page__footer__menu">
                         <a
                             className="landing__page__anchor__tag"
-                            href="http://localhost:3000/contact"
+                            href="https://intense-river-55466.herokuapp.com//contact"
                         >Contact</a>
                     </p>
 
                     <p className="landing__page__footer__menu">
                         <a
                             className="landing__page__anchor__tag"
-                            href="http://localhost:3000/my-project"
+                            href="https://intense-river-55466.herokuapp.com//my-project"
                         >My Project</a>
                     </p>
 

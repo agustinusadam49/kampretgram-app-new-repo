@@ -53,7 +53,7 @@ function ModalEditUserProfile({ userId, fName, userN, eml, avatarUrl, status_use
             body: JSON.stringify(body)
         }
 
-        let url = `http://localhost:5000/users/${userId}`;
+        let url = `https://intense-river-55466.herokuapp.com/users/${userId}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(editedProfileOne => {

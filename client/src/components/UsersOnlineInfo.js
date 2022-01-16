@@ -10,7 +10,7 @@ function UsersOnlineInfo({ allUsersOnline, allFollowsData, setSnap }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/users/all-users-login-info"
+        let url = "https://intense-river-55466.herokuapp.com/users/all-users-login-info"
         const requestOptions = {
             method: "GET",
             headers: {

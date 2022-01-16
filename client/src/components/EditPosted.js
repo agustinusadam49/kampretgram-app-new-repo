@@ -14,7 +14,7 @@ function EditPosted({ setSnapAllDataProfile }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/posts/all-user-login-posts/";
+        let url = "https://intense-river-55466.herokuapp.com/posts/all-user-login-posts/";
         const requestOptions = {
             method: "GET",
             headers: {
@@ -53,7 +53,7 @@ function EditPosted({ setSnapAllDataProfile }) {
                 token: localStorage.user_token
             }
         }
-        let url = `http://localhost:5000/posts/${posted_id}`
+        let url = `https://intense-river-55466.herokuapp.com/posts/${posted_id}`
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(deletedPost => {

@@ -42,7 +42,7 @@ function ProfilePage({ setAuth }) {
             body: JSON.stringify(body)
         }
 
-        let url = `http://localhost:5000/follows/${id_follow_delete_from_database}`;
+        let url = `https://intense-river-55466.herokuapp.com/follows/${id_follow_delete_from_database}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(resultEditIdDelete => {
@@ -73,7 +73,7 @@ function ProfilePage({ setAuth }) {
             },
             body: JSON.stringify(body)
         }
-        let url = "http://localhost:5000/follows"
+        let url = "https://intense-river-55466.herokuapp.com/follows"
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(newFollows => {
@@ -102,7 +102,7 @@ function ProfilePage({ setAuth }) {
                 token: localStorage.user_token
             }
         }
-        let url = `http://localhost:5000/follows/${id}`;
+        let url = `https://intense-river-55466.herokuapp.com/follows/${id}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(deletedFolllow => {
@@ -145,7 +145,7 @@ function ProfilePage({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = `http://localhost:5000/users/${dataUser.user.id}`;
+        let url = `https://intense-river-55466.herokuapp.com/users/${dataUser.user.id}`;
         const requestOptions = {
             method: "GET",
             headers: {

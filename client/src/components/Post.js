@@ -22,7 +22,7 @@ function Post({ post, user_id, username, imageUrl, avatarUrl, caption, setSnap, 
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = `http://localhost:5000/users/${id}`;
+        let url = `https://intense-river-55466.herokuapp.com/users/${id}`;
         const requestOptions = {
             method: "GET",
             headers: {
@@ -95,7 +95,7 @@ function Post({ post, user_id, username, imageUrl, avatarUrl, caption, setSnap, 
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = `http://localhost:5000/posts/${post.id}`
+        let url = `https://intense-river-55466.herokuapp.com/posts/${post.id}`
         const requestOption = {
             method: "GET",
             headers: { token: localStorage.user_token }
@@ -133,7 +133,7 @@ function Post({ post, user_id, username, imageUrl, avatarUrl, caption, setSnap, 
             },
             body: JSON.stringify(body)
         }
-        let url = "http://localhost:5000/comments";
+        let url = "https://intense-river-55466.herokuapp.com/comments";
 
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
@@ -176,7 +176,7 @@ function Post({ post, user_id, username, imageUrl, avatarUrl, caption, setSnap, 
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/users/all-users-login-info"
+        let url = "https://intense-river-55466.herokuapp.com/users/all-users-login-info"
         const requestOptions = {
             method: "GET",
             headers: {

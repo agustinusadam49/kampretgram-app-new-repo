@@ -28,7 +28,7 @@ function MyProfile({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/notifications"
+        let url = "https://intense-river-55466.herokuapp.com/notifications"
         const requestOptions = {
             method: "GET",
             headers: {
@@ -61,7 +61,7 @@ function MyProfile({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/users/all-users-login-info"
+        let url = "https://intense-river-55466.herokuapp.com/users/all-users-login-info"
         const requestOptions = {
             method: "GET",
             headers: {

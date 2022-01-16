@@ -29,7 +29,7 @@ function ModalEditComment({ comment, setSnapYourComments }) {
             body: JSON.stringify(body)
         }
 
-        let url = `http://localhost:5000/comments/${comment.id}`;
+        let url = `https://intense-river-55466.herokuapp.com/comments/${comment.id}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(editedComment => {

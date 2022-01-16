@@ -47,7 +47,7 @@ function LoginForm({ setAuth }) {
             body: JSON.stringify(body)
         }
 
-        let url = "http://localhost:5000/users/login/"
+        let url = "https://intense-river-55466.herokuapp.com/users/login/"
 
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
@@ -105,7 +105,7 @@ function LoginForm({ setAuth }) {
                     >Login
                 </button>
 
-                    <p className="login__form__text__to__register">Haven't had an account, yet? <a onClick={() => toRegister()} href="http://localhost:3000/register">Register</a></p>
+                    <p className="login__form__text__to__register">Haven't had an account, yet? <a onClick={() => toRegister()} href="https://intense-river-55466.herokuapp.com/register">Register</a></p>
                 </form>
             </Container>
         </div>

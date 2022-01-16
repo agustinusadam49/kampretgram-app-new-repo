@@ -23,7 +23,7 @@ function LoveButton({ setSnap, post, setSnapComment, likesPunyaUser }) {
             },
             body: JSON.stringify(body)
         }
-        let url = `http://localhost:5000/likes/${id_like_from_database}`;
+        let url = `https://intense-river-55466.herokuapp.com/likes/${id_like_from_database}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(resultEditIdDelete => {
@@ -56,7 +56,7 @@ function LoveButton({ setSnap, post, setSnapComment, likesPunyaUser }) {
             },
             body: JSON.stringify(body)
         }
-        let url = "http://localhost:5000/likes"
+        let url = "https://intense-river-55466.herokuapp.com/likes"
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(newLikes => {
@@ -86,7 +86,7 @@ function LoveButton({ setSnap, post, setSnapComment, likesPunyaUser }) {
                 token: localStorage.user_token
             }
         }
-        let url = `http://localhost:5000/likes/${id}`;
+        let url = `https://intense-river-55466.herokuapp.com/likes/${id}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(deletedLike => {

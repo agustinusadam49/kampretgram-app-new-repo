@@ -31,7 +31,7 @@ function OnlineUsersCard({ id_user_online, yourId, users_online, avatar, usernam
                 read: true
 
             }
-            let url = `http://localhost:5000/messages/${messageId}`;
+            let url = `https://intense-river-55466.herokuapp.com/messages/${messageId}`;
             const requestOptions = {
                 method: "PUT",
                 headers: {
@@ -62,7 +62,7 @@ function OnlineUsersCard({ id_user_online, yourId, users_online, avatar, usernam
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/messages";
+        let url = "https://intense-river-55466.herokuapp.com/messages";
         const requestOptions = {
             method: "GET",
             headers: {
@@ -106,7 +106,7 @@ function OnlineUsersCard({ id_user_online, yourId, users_online, avatar, usernam
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = `http://localhost:5000/users/${id}`;
+        let url = `https://intense-river-55466.herokuapp.com/users/${id}`;
         const requestOptions = {
             method: "GET",
             headers: {
@@ -150,7 +150,7 @@ function OnlineUsersCard({ id_user_online, yourId, users_online, avatar, usernam
             },
             body: JSON.stringify(body)
         }
-        let url = "http://localhost:5000/messages";
+        let url = "https://intense-river-55466.herokuapp.com/messages";
 
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())

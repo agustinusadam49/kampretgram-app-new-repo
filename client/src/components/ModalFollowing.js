@@ -10,7 +10,7 @@ function ModalFollowing() {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/follows"
+        let url = "https://intense-river-55466.herokuapp.com/follows"
         const requestOptions = {
             method: "GET",
             headers: { token: localStorage.user_token }

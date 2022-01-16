@@ -14,7 +14,7 @@ function EditComment({ setSnapAllDataProfile }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/comments";
+        let url = "https://intense-river-55466.herokuapp.com/comments";
         const requestOptions = {
             method: "GET",
             headers: {
@@ -53,7 +53,7 @@ function EditComment({ setSnapAllDataProfile }) {
                 token: localStorage.user_token
             }
         }
-        let url = `http://localhost:5000/comments/${comment_id}`
+        let url = `https://intense-river-55466.herokuapp.com/comments/${comment_id}`
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(deletedComment => {

@@ -34,7 +34,7 @@ function ModalEditPosted({ post, setSnapTablePosted }) {
             body: JSON.stringify(body)
         }
 
-        let url = `http://localhost:5000/posts/${post.id}`;
+        let url = `https://intense-river-55466.herokuapp.com/posts/${post.id}`;
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())
             .then(editedPost => {

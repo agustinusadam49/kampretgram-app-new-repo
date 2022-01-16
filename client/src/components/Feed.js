@@ -21,7 +21,7 @@ function Feed({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/posts/";
+        let url = "https://intense-river-55466.herokuapp.com/posts/";
         const requestOptions = {
             method: "GET",
             headers: { token: localStorage.user_token }
@@ -48,7 +48,7 @@ function Feed({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/likes"
+        let url = "https://intense-river-55466.herokuapp.com/likes"
         const requestOptions = {
             method: "GET",
             headers: { token: localStorage.user_token }
@@ -72,7 +72,7 @@ function Feed({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/follows"
+        let url = "https://intense-river-55466.herokuapp.com/follows"
         const requestOptions = {
             method: "GET",
             headers: { token: localStorage.user_token }
@@ -96,7 +96,7 @@ function Feed({ setAuth }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/users/online"
+        let url = "https://intense-river-55466.herokuapp.com/users/online"
         const requestOptions = {
             method: "GET",
         }

@@ -46,7 +46,7 @@ function RegisterForm({ setAuth }) {
             password: password
         }
 
-        let url = "http://localhost:5000/users/register/"
+        let url = "https://intense-river-55466.herokuapp.com/users/register/"
         const requestOptions = {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -127,7 +127,7 @@ function RegisterForm({ setAuth }) {
                     >Submit
                     </button>
 
-                    <p className="register__form__text__to__login">Have account already? <a onClick={() => toLogin()} href="http://localhost:3000/login">Login</a></p>
+                    <p className="register__form__text__to__login">Have account already? <a onClick={() => toLogin()} href="https://intense-river-55466.herokuapp.com/login">Login</a></p>
                 </form>
             </Container>
         </div>

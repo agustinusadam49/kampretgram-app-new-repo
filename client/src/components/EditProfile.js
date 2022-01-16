@@ -10,7 +10,7 @@ function EditProfile({ setSnapAllDataProfile }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/users/edit-profile-user-login"
+        let url = "https://intense-river-55466.herokuapp.com/users/edit-profile-user-login"
         const requestOptions = {
             method: "GET",
             headers: {

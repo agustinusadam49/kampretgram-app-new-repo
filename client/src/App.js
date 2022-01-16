@@ -55,7 +55,7 @@ function App() {
       body: JSON.stringify(body)
     }
 
-    let url = `http://localhost:5000/users/logout/${userId}`;
+    let url = `https://intense-river-55466.herokuapp.com/users/logout/${userId}`;
     fetch(url, requestOptions, { signal: signal })
       .then(response => response.json())
       .then(logoutUser => {
@@ -80,8 +80,8 @@ function App() {
     if (isAuthenticated === false) {
       return (
         <div>
-          <button className="app__headerButtonRegister"><a className="app__anchor__register" href="http://localhost:3000/register/">Register</a></button>
-          <button className="app__headerButtonLogin"><a className="app__anchor__login" href="http://localhost:3000/login/">Login</a></button>
+          <button className="app__headerButtonRegister"><a className="app__anchor__register" href="https://intense-river-55466.herokuapp.com/register/">Register</a></button>
+          <button className="app__headerButtonLogin"><a className="app__anchor__login" href="https://intense-river-55466.herokuapp.com/login/">Login</a></button>
         </div>
       )
     } else if (isAuthenticated === true) {
@@ -104,7 +104,7 @@ function App() {
         <div className="app__header">
 
           <div className="app__header__image_brandname">
-            <h5 className="app__headerBrandName"><a className="app__anchor__tag" href="http://localhost:3000">KampretGram</a></h5>
+            <h5 className="app__headerBrandName"><a className="app__anchor__tag" href="https://intense-river-55466.herokuapp.com/">KampretGram</a></h5>
           </div>
 
           <div className="app__headerButton">

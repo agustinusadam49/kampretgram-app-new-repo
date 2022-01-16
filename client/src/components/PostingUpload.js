@@ -18,7 +18,7 @@ function PostingUpload({ setSnap }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/posts"
+        let url = "https://intense-river-55466.herokuapp.com/posts"
 
         let body = {
             caption: captions,

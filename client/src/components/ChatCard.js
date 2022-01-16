@@ -15,7 +15,7 @@ function ChatCard({ chat_id, avatar, username }) {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = `http://localhost:5000/chats/${chat_id}`
+        let url = `https://intense-river-55466.herokuapp.com/chats/${chat_id}`
         const requestOption = {
             method: "GET",
             headers: { token: localStorage.user_token }
@@ -53,7 +53,7 @@ function ChatCard({ chat_id, avatar, username }) {
             },
             body: JSON.stringify(body)
         }
-        let url = "http://localhost:5000/messages";
+        let url = "https://intense-river-55466.herokuapp.com/messages";
 
         fetch(url, requestOptions, { signal: signal })
             .then(response => response.json())

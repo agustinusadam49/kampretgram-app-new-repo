@@ -11,7 +11,7 @@ function ModalLikes() {
         const abortController = new AbortController();
         const signal = abortController.signal;
 
-        let url = "http://localhost:5000/likes"
+        let url = "https://intense-river-55466.herokuapp.com/likes"
         const requestOptions = {
             method: "GET",
             headers: { token: localStorage.user_token }

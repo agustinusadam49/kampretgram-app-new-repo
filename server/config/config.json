@@ -15,10 +15,10 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "postgres",
-    "password": "admin",
-    "database": "kampretgram_db_production",
-    "host": "127.0.0.1",
+    "username": "thblfbkaudtdys",
+    "password": "126739d5a8cb6ec8b9e1081a382be03cdb11a138809fb87b48a100375f9d11ab",
+    "database": "d1dqh46p1lu63s",
+    "host": "ec2-54-172-219-6.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }

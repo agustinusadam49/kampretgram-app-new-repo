@@ -1,0 +1,81 @@
+.modal__likes__button {
+    position: relative;
+    cursor: pointer;
+    /* width: 100px;
+    height: 30px; */
+    background-color: blueviolet;
+    font-size: medium;
+    border-radius: 5px;
+    object-fit: contain;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.modal__likes__button::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.modal__likes__button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.modal__like__table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.modal__like__table td, .modal__like__table th {
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    word-break: break-all;
+    font-size: small;
+}
+
+.modal__like__table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    /* width: 100px; */
+}
+
+.modal__like__th__user {
+    width: 150px;
+}
+
+.modal__like__th__image {
+    width: fit-content;
+}
+
+.modal__like__th__caption {
+    width: 500px;
+}
+
+.modal__like__image {
+    object-fit: contain;
+    min-width: 70px;
+    max-width: 70px;
+    min-height: 70px;
+    max-height: 70px;
+}

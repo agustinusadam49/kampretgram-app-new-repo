@@ -1,0 +1,24 @@
+.my__profile__page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 10px;
+    width: fit-content;
+    background-color: white;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    /* border: solid 1px black; */
+}
+
+.my__profile__container__1 {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px lightgray; */
+}
+
+.my__profile__container__2 {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px lightgray; */
+}

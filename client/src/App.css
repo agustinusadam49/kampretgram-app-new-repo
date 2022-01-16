@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.app__header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  /* padding-right: 10px; */
+  border-bottom: 1px solid lightgrey;
+  object-fit: contain;
+  width: 100%;
+  /* justify-content: space-between; */
+  background-color: white;
+}
+
+.app__headerButton {
+  width: 85%;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.app__anchor__register {
+  text-decoration: none;
+  color: black;
+}
+
+.app__anchor__login {
+  text-decoration: none;
+  color: black;
+}
+
+.app__headerButtonRegister {
+  width: fit-content;
+  height: 40px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: solid 2px blueviolet;
+  border-radius: 5px;
+  object-fit: contain;
+  font-size: small;
+  margin-right: 20px;
+}
+
+.app__headerButtonLogin {
+  width: fit-content;
+  height: 40px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: solid 2px blueviolet;
+  border-radius: 5px;
+  object-fit: contain;
+  font-size: small;
+}
+
+.app__headerButtonLogout {
+  width: fit-content;
+  height: 40px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: solid 2px blueviolet;
+  font-size: medium;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.app__headerBrandName {
+  cursor: pointer;
+}
+
+.app__anchor__tag {
+  color: black;
+}
+
+.app__anchor__tag:hover {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,44 @@
+.feed {
+    width: fit-content;
+    padding: 10px;
+    /* border: solid 1px black; */
+}
+
+.feed__container__2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 10px;
+    width: fit-content;
+    /* border: solid 1px black; */
+}
+
+.feed__box__1 {
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+    height: fit-content;
+    /* border: solid 1px black; */
+}
+
+.feed__box__2 {
+    height: fit-content;
+    grid-column: span 2;
+    /* border: solid 1px black; */
+}
+
+.feed__box__3 {
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+    height: fit-content;
+    /* border: solid 1px black; */
+}
+
+.feed__error__text__emtpy__post {
+    text-align: center;
+}
+
+.feed__user__users__online {
+    margin-left: 20px;
+}

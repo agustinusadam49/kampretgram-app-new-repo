@@ -1,0 +1,72 @@
+.register__form {
+    margin-top: 100px;
+}
+
+.register__form__formBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: fit-content;
+    border: solid 1px lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.register__form__all__input {
+    height: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: medium;
+}
+
+.register__form__button__submit {
+    border-radius: 10px;
+    width: 30%;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-size: medium;
+    border-style: none;
+    outline-style: none;
+    box-shadow: 0 3px #999;
+}
+
+.register__form__button__submit:hover {
+    background-color: darkviolet
+}
+
+.register__form__button__submit:active {
+    background-color: darkviolet;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.register__form__eye__icon {
+    border-radius: 5px;
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+    border-style: none;
+    outline-style: none;
+    background-color: white;
+    margin-top: 5px;
+}
+.register__form__text__register {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.register__form__text__to__login {
+    margin-right: auto;
+    margin-left: auto;
+}

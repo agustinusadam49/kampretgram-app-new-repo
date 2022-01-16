@@ -1,0 +1,101 @@
+.edit__comment {
+    background-color: white;
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 70%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.edit__comment__table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.edit__comment__table td, .edit__comment__table th {
+    border: 1px solid #ddd;
+    word-break: break-all;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+.edit__comment__table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+.edit__comment__table__column__user {
+    max-width: 100px;
+    min-width: 70px;
+}
+
+.edit__comment__table__column__caption {
+    max-width: 100px;
+    min-width: 70px;
+}
+
+.edit__comment__table__column__comment {
+    max-width: 100px;
+    min-width: 70px;
+}
+
+.edit__comment__table__column__action {
+    max-width: 100px;
+    min-width: 70px;
+}
+
+
+.edit__comment__delete__button {
+    position: relative;
+    cursor: pointer;
+    background-color: red;
+    font-size: medium;
+    border-radius: 5px;
+    object-fit: contain;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.edit__comment__delete__button::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.edit__comment__delete__button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.edit__comment__text__title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.edit__comment__text__if__empty {
+    text-align: center;
+}

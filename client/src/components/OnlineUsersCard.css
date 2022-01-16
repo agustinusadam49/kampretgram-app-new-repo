@@ -1,0 +1,198 @@
+.users__online__info__list__box {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px lightgrey;
+    width: 100%;
+    max-height: fit-content;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.users__online__info__box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-height: fit-content;
+    align-items: center;
+}
+
+.users__online__info__avatar {
+    object-fit: contain;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+
+.users__online__info__username {
+    max-height: fit-content;
+    margin-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.online__user__card__message__button {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    background-color: blueviolet;
+    border-radius: 5px;
+    object-fit: contain;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.online__user__card__message__button::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.online__user__card__message__button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.incoming-unread-messages-badge {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 20px;
+}
+
+.online__users__card__messages__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.online__users__card__add__message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.online__users__card__message__input {
+    object-fit: contain;
+    width: 100%;
+    height: 50px;
+    text-align: justify;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.online__users__card__button__submit {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    height: 30px;
+    background-color: blueviolet;
+    font-size: medium;
+    border-radius: 5px;
+    object-fit: contain;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.online__users__card__button__submit::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s   
+}
+
+.online__users__card__button__submit:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s   
+}
+
+.online__users__card__message__list__box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-height: fit-content;
+    /* border: solid 1px lightgrey; */
+}
+
+.online__users__card__message__avatar__container {
+    width: fit-content;
+    height: fit-content;
+}
+
+.online__users__card__avatar__message {
+    object-fit: contain;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+
+.online__users__card__message__info__container {
+    object-fit: contain;
+    width: 100%;
+    max-height: fit-content;    
+}
+
+.online__users__card__message__username {
+    max-height: fit-content;
+    width: 100%;
+    margin-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.online__users__card__message__text__inbox {
+    width: 60%;
+    word-break: break-word;
+    padding: 10px;
+    font-size: small;
+    background-color: yellow;
+    border-radius: 0px 5px 5px 5px;
+    border-left: solid 5px yellowgreen;
+}
+
+.online__users__card__message__text__sent {
+    width: 60%;
+    word-break: break-word;
+    padding: 10px;
+    font-size: small;
+    background-color: aquamarine;
+    border-radius: 5px 0px 5px 5px;
+    border-right: solid 5px red;
+    margin-left: auto;
+}

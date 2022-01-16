@@ -15,7 +15,7 @@ class UserControllers {
                         message: `Maaf email: ${newUserEmail} telah digunakan!`,
                         code: 401
                     }
-                } else if (userDataEmail == null) {
+                } else if (!userDataEmail) {
                     let newUserObj = {
                         full_name: req.body.full_name,
                         username: req.body.username,
@@ -28,7 +28,7 @@ class UserControllers {
             .then(newUserData => {
                 newUserTemp = newUserData
                 let newProfileObj = {
-                    avatar_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFnG0huY6whcqQtmgJDP7XgSb8VCpmLUnKXw&usqp=CAU",
+                    avatar_url: "",
                     status: "no status yet",
                     phone_number: 23456,
                     UserId: newUserTemp.id

@@ -15,7 +15,6 @@
     "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^12.0.4",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.0",
     "google-auth-library": "^6.0.6",
@@ -27,5 +26,7 @@
     "sequelize-cli": "^6.2.0",
     "socket.io": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "dotenv": "^12.0.4"
+  }
 }

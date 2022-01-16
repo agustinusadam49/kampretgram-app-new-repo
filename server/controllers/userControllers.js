@@ -28,7 +28,7 @@ class UserControllers {
             .then(newUserData => {
                 newUserTemp = newUserData
                 let newProfileObj = {
-                    avatar_url: "",
+                    avatar_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFnG0huY6whcqQtmgJDP7XgSb8VCpmLUnKXw&usqp=CAU",
                     status: "no status yet",
                     phone_number: 23456,
                     UserId: newUserTemp.id

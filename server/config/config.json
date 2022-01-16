@@ -20,8 +20,6 @@
     "database": "d1dqh46p1lu63s",
     "host": "ec2-54-172-219-6.compute-1.amazonaws.com",
     "dialect": "postgres",
-    "dialectOptions": {
-      "ssl": true
-    }
+    "ssl": true
   }
 }

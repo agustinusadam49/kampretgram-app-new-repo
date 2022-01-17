@@ -51,7 +51,7 @@ function UsersOnlineInfo({ allUsersOnline, allFollowsData, setSnap }) {
                                 yourId={yourId}
                                 id_user_online={userOnline.id}
                                 users_online={userOnline}
-                                avatar={userOnline.Profile.avatar_url}
+                                avatar={userOnline?.Profile?.avatar_url || "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFnG0huY6whcqQtmgJDP7XgSb8VCpmLUnKXw&usqp=CAU"}
                                 username={userOnline.username}
                                 allFollowsData={allFollowsData}
                                 setSnap={setSnap}
